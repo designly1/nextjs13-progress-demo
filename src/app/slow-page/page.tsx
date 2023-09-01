@@ -1,11 +1,16 @@
 import React from 'react';
 
 const fetchData = async () => {
-	const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api`, {
-        cache: 'no-cache',
-	});
-	const data = await response.json();
-	return data;
+	try {
+		const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api`, {
+			cache: 'no-cache',
+		});
+		const data = await response.json();
+		return data;
+	} catch (e) {
+		console.warn(e);
+        return {};
+	}
 };
 
 export default async function SlowPage() {
