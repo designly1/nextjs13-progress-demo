@@ -9,7 +9,7 @@ export default function Home() {
       Click a link in the header above to iniate nProgress.
       </p>
       <h2 className="text-4xl font-bold">And also, here&apos;s some music!</h2>
-      <Spotify url="https://open.spotify.com/embed/track/5OsLigvYos454XWaE5bCdO?utm_source=generator" />
+      <Spotify url="https://open.spotify.com/embed/track/7vk0RUJvK8iLsNMD5vfaAw?utm_source=generator" />
 		</div>
 	);
 }
