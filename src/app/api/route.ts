@@ -1,6 +1,6 @@
-import { NextRequest, NextResponse } from 'next/server';
+import { NextResponse } from 'next/server';
 
-export async function GET(request: NextRequest) {
+export async function GET() {
 	// Create a 2 second delay
 	await new Promise(resolve => setTimeout(resolve, 2000));
 
